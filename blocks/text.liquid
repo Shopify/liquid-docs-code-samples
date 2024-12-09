@@ -1,6 +1,6 @@
 {% comment %} [START block.markup] {% endcomment %}
 <div
-  class="text-block {{ block.settings.text_style }} text-{{ block.settings.alignment }}"
+  class="text-block text-{{ block.settings.alignment }}"
 >
   {{ block.settings.text }}
 </div>
@@ -15,25 +15,6 @@
       "type": "richtext",
       "id": "text",
       "label": "Text"
-    },
-    {
-      "type": "select",
-      "id": "text_style",
-      "label": "Style",
-      "options": [
-        {
-          "value": "",
-          "label": "Body"
-        },
-        {
-          "value": "text-block-subtitle",
-          "label": "Subtitle"
-        },
-        {
-          "value": "text-block-caption",
-          "label": "Caption"
-        }
-      ],
     },
     {
       "type": "text_alignment",

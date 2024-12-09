@@ -1,0 +1,55 @@
+{% comment %} [START block.markup] {% endcomment %}
+<div
+  class="text-block {{ block.settings.text_style }} text-{{ block.settings.alignment }}"
+>
+  {{ block.settings.text }}
+</div>
+{% comment %} [END block.markup] {% endcomment %}
+
+{% comment %} [START block.preset] {% endcomment %}
+{% schema %}
+{
+  "name": "Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "text_style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "",
+          "label": "Body"
+        },
+        {
+          "value": "text-block-subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "value": "text-block-caption",
+          "label": "Caption"
+        }
+      ],
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "Alignment"
+    },
+  ],
+  "presets": [
+    { "name": "Text" },
+    {
+      "name": "Content",
+      "settings": {
+        "text": "Hello, world!"
+      }
+    }
+  ]
+}
+{% endschema %}
+{% comment %} [END block.preset] {% endcomment %}

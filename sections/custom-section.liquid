@@ -47,55 +47,8 @@
             {
               "type": "text",
               "settings": {
-                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.</p>"
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Featured collection",
-      "blocks": [
-        {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Featured collection</h2>",
-            "alignment": "left"
-          }
-        },
-        {
-          "type": "product-grid",
-          "blocks": [
-            {
-              "id": "product-grid-item",
-              "type": "product-card",
-              "static": true,
-              "settings": {
-                "product": "{{ closest.product }}"
-              },
-              "blocks": [
-                {
-                  "type": "product-medias",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "media_featured": true
-                  }
-                },
-                {
-                  "type": "product-title",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "heading_size": "h5"
-                  }
-                },
-                {
-                  "type": "price",
-                  "settings": {
-                    "product": "{{ closest.product }}"
-                  }
-                }
-              ]
             }
           ]
         }

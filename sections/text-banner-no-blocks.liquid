@@ -1,3 +1,5 @@
+{% comment %} [START section.assets] {% endcomment %}
+
 <style type="text/css">
   .section {
     margin-top: 1rem;
@@ -10,12 +12,16 @@
   }
 </style>
 
+{% comment %} [START section.markup] {% endcomment %}
+
+{% comment %} [END section.assets] {% endcomment %}
 <div class="section">
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings.text }}</p>
 </div>
+{% comment %} [END section.markup] {% endcomment %}
 
-
+{% comment %} [START section.schema] {% endcomment %}
 {% schema %}
 {
   "name": "Text banner",
@@ -43,3 +49,4 @@
   ]
 }
 {% endschema %}
+{% comment %} [END section.schema] {% endcomment %}

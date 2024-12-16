@@ -1,0 +1,45 @@
+<style type="text/css">
+  .section {
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section {
+      margin-top: 2rem;
+    }
+  }
+</style>
+
+<div class="section">
+  <h1>{{ section.settings.heading }}</h1>
+  <p>{{ section.settings.text }}</p>
+</div>
+
+
+{% schema %}
+{
+  "name": "Text banner",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "default": "Give customers details about your store or content on the template.",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Add a Heading",
+      "label": "Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text banner no blocks",
+    }
+  ]
+}
+{% endschema %}

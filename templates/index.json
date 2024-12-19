@@ -1,4 +1,4 @@
-{% comment %} [START template.sections] {% endcomment %}
+// [START template.sections]
 {
   "sections": {
     "example_section_with_blocks_jDc9q6": {
@@ -37,4 +37,4 @@
     "example_section_no_blocks_HQdBRy",
   ]
 }
-{% comment %} [END template.sections] {% endcomment %}
+// [END template.sections]

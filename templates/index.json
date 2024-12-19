@@ -1,0 +1,40 @@
+{% comment %} [START template.sections] {% endcomment %}
+{
+  "sections": {
+    "example_section_with_blocks_jDc9q6": {
+      "type": "example-section-with-blocks",
+      "blocks": {
+        "heading_VrDrG7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Text Banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_WQgWM9": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about your store or content on the template."
+          }
+        }
+      },
+      "block_order": [
+        "heading_VrDrG7",
+        "text_WQgWM9"
+      ],
+      "settings": {}
+    },
+    "example_section_no_blocks_HQdBRy": {
+      "type": "example-section-no-blocks",
+      "settings": {
+        "text": "Give customers details about your store or content on the template.",
+        "heading": "Add a Heading"
+      }
+    },
+  },
+  "order": [
+    "example_section_with_blocks_jDc9q6",
+    "example_section_no_blocks_HQdBRy",
+  ]
+}
+{% comment %} [END template.sections] {% endcomment %}

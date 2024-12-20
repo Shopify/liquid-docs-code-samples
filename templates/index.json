@@ -1,8 +1,8 @@
 /* [START template.sections] */
 {
   "sections": {
-    "example_section_with_blocks_jDc9q6": {
-      "type": "example-section-with-blocks",
+    "text_banner_with_blocks_jDc9q6": {
+      "type": "text-banner-with-blocks",
       "blocks": {
         "heading_VrDrG7": {
           "type": "heading",
@@ -24,8 +24,8 @@
       ],
       "settings": {}
     },
-    "example_section_no_blocks_HQdBRy": {
-      "type": "example-section-no-blocks",
+    "text_banner_no_blocks_HQdBRy": {
+      "type": "text-banner-no-blocks",
       "settings": {
         "text": "Give customers details about your store or content on the template.",
         "heading": "Add a Heading"
@@ -33,8 +33,8 @@
     },
   },
   "order": [
-    "example_section_with_blocks_jDc9q6",
-    "example_section_no_blocks_HQdBRy",
+    "text_banner_with_blocks_jDc9q6",
+    "text_banner_no_blocks_HQdBRy",
   ]
 }
 /* [END template.sections] */

@@ -1,3 +1,9 @@
+{% comment %} [START block.markup] {% endcomment %}
+<div class="text-block text-{{ block.settings.alignment }}">
+  {{ block.settings.text }}
+</div>
+{% comment %} [END block.markup] {% endcomment %}
+
 {% stylesheet %}
   .text-left {
     text-align: left;
@@ -11,12 +17,6 @@
     text-align: right;
   }
 {% endstylesheet %}
-
-{% comment %} [START block.markup] {% endcomment %}
-<div class="text-block text-{{ block.settings.alignment }}">
-  {{ block.settings.text }}
-</div>
-{% comment %} [END block.markup] {% endcomment %}
 
 {% comment %} [START block.preset] {% endcomment %}
 {% schema %}
